@@ -1,4 +1,4 @@
-import React, {FC} from "react";
+import React, {FC, ReactNode} from "react";
 import styles from "../styles.module.scss";
 import {Modal} from "../../Modal/Modal";
 import {Card} from "../Card";
@@ -6,7 +6,7 @@ import {Card} from "../Card";
 type PropsT = {
     logoImg: string | undefined
     logoName: string
-    bodyText: string
+    bodyText: ReactNode
     bg_link: string
     openModal: (cityName: string) => void
 };
@@ -35,7 +35,9 @@ export const SubCard: FC<PropsT> = ({logoImg, logoName, bodyText, bg_link, openM
                     </div>
                 </div>
                 <div className={styles.subcard_text_wrapper}>
-                    {bodyText}
+                    <div className={styles.subcard_text_container}>
+                        {bodyText}
+                    </div>
                 </div>
             </div>
 
