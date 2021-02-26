@@ -1,0 +1,61 @@
+.modal {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 2;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  opacity:0; /*Элемент полностью прозрачный (невидимый)*/
+  transition: 1s; /*Скорость перехода состояния элемента*/
+  animation: show 3s 1; /* Указываем название анимации, её время и количество повторов*/
+  animation-fill-mode: forwards; /* Чтобы элемент оставался в конечном состоянии анимации */
+  @keyframes show{
+    0%{
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+
+  .modal_message {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    width: 100%;
+
+    .modal_btn_row {
+      display: flex;
+      margin-top: 20px;
+      flex-direction: row;
+      justify-content: center;
+
+      .modal_btn {
+        display: flex;
+        justify-content: center;
+        min-width: 250px;
+        padding: .6rem .8rem;
+        border-radius: 50px;
+        background-color: black;
+        color: white;
+        font-size: 25px;
+        border: 3px solid transparent;
+
+        &:hover {
+          cursor: pointer;
+          border: 3px solid white;
+        }
+
+        &:nth-child(1) {
+          margin-right: 20px;
+        }
+      }
+
+    }
+  }
+}
