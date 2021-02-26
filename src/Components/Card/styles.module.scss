@@ -44,25 +44,28 @@ html {
       height: 30%;
 
       .subcard_logo {
-        zoom: 80%;
-        object-fit: cover;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        height: 100%;
       }
 
       .subcard_logo_container {
-        display: flex;
-        align-content: center;
-        justify-content: center;
-        height: 100%;
-        //margin-right: 60px;
+        zoom: 80%;
+        object-fit: cover;
+        margin-top: auto;
+        margin-bottom: auto;
       }
 
       .subcard_logoName_wrapper {
+        font-size: 20px;
         height: 100%;
         display: flex;
         justify-content: center;
         align-content: center;
 
         .subcard_logoName {
+          font-family: Ringbearer Cyrillic, normal;
           font-size: 2rem;
           margin: auto 0;
         }

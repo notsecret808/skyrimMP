@@ -32,19 +32,23 @@ html {
     justify-content: space-evenly;
     height: 30%; }
     .subcard_wrapper .subcard_body_wrapper .subcard_logo_wrapper .subcard_logo {
-      zoom: 80%;
-      object-fit: cover; }
-    .subcard_wrapper .subcard_body_wrapper .subcard_logo_wrapper .subcard_logo_container {
       display: flex;
-      align-content: center;
       justify-content: center;
+      align-content: center;
       height: 100%; }
+    .subcard_wrapper .subcard_body_wrapper .subcard_logo_wrapper .subcard_logo_container {
+      zoom: 80%;
+      object-fit: cover;
+      margin-top: auto;
+      margin-bottom: auto; }
     .subcard_wrapper .subcard_body_wrapper .subcard_logo_wrapper .subcard_logoName_wrapper {
+      font-size: 20px;
       height: 100%;
       display: flex;
       justify-content: center;
       align-content: center; }
       .subcard_wrapper .subcard_body_wrapper .subcard_logo_wrapper .subcard_logoName_wrapper .subcard_logoName {
+        font-family: Ringbearer Cyrillic, normal;
         font-size: 2rem;
         margin: auto 0; }
 

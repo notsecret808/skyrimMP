@@ -1,11 +1,11 @@
 import React, {CSSProperties, FC, useState} from 'react';
-import logo from './logo.svg';
 import './App.css';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
 import {Carousel} from "react-responsive-carousel";
 import {Card} from "./Components/Card/Card";
 import {SubCard} from "./Components/Card/SubCard/SubCard";
 import {Modal} from "./Components/Modal/Modal";
+
 
 export const DanstarText: FC = () => {
     return (
@@ -313,4 +313,3 @@ export const App: FC = () => {
         </div>
     );
 }
-

@@ -1,18 +1,17 @@
 import React, {FC, ReactNode} from "react";
 import styles from "../styles.module.scss";
-import {Modal} from "../../Modal/Modal";
-import {Card} from "../Card";
 
 type PropsT = {
     logoImg: string | undefined
     logoName: string
     bodyText: ReactNode
+    logo?: any
     bg_link: string
     openModal: (cityName: string) => void
 };
 
 
-export const SubCard: FC<PropsT> = ({logoImg, logoName, bodyText, bg_link, openModal}) => {
+export const SubCard: FC<PropsT> = ({logoImg, logoName, logo, bodyText, bg_link, openModal}) => {
     return (
         <div style={{
             background: `url(${bg_link}) rgba(0,0,0,0.8) top no-repeat`,
@@ -44,7 +43,7 @@ export const SubCard: FC<PropsT> = ({logoImg, logoName, bodyText, bg_link, openM
             <div className={styles.subcard_footer}>
                 <div className={styles.subcard_btn_wrapper}>
                     <div className={styles.subcard_btn} onClick={() => openModal(logoName)}>
-                        Подтвердить выбор
+                        <span>Подтвердить выбор</span>
                     </div>
                 </div>
             </div>
